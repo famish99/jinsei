@@ -26,7 +26,7 @@ def build_resume(args):
     with open(args.input, 'r') as ifp:
         # Needed for cases file reports a modified time but changes are cached
         ifp.flush()
-        context = yaml.load(ifp)
+        context = yaml.load(ifp, Loader=yaml.Loader)
         template = env.get_template(context['template'])
         ir_path = os.path.join('build', 'out_%s' % context['template'])
         with open(ir_path, 'w') as ofp:
@@ -47,6 +47,7 @@ def build_resume(args):
             'wkhtmltopdf',
             '-s', 'Letter',
             '--print-media-type',
+            '--enable-local-file-access',
             ir_path,
             args.output
             ])

@@ -6,7 +6,7 @@ address: 221B Baker Street
 city: Westminster
 state: London
 zipcode: NW1
-title: Software Engineering Manager
+title: Senior Software Engineer
 profile: Passionate software developer with expertise in software architecture, user
   experience design, rapid prototyping, project management and tools development.
 skills:
@@ -26,11 +26,23 @@ skills:
 - Windows
 - Linux
 experience:
+- employer: Silicon Labs
+  title: Senior Software Engineer
+  location: Austin, Texas
+  start_date: January 2020
+  end_date: present
+  tasks:
+  - Administered high availability systems responsible for operations tooling
+  - Lead team responsible test program release management app development
+  - Designed front end applications using React/Redux
+  - Architected and developed Python/Tornado/RabbitMQ-based backend
+  - Developed and maintained unit tests
+  - Mentored interns and new college graduates
 - employer: Renesas Electronics America
   title: Software Engineering Manager
   location: Austin, Texas
   start_date: October 2014
-  end_date: present
+  end_date: December 2019
   tasks:
   - Architected ClojureScript/Reagent/Re-frame (unidirectional dataflow) based GUI
     application for data collection using CEFPython framework
