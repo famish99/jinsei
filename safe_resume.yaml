@@ -6,105 +6,105 @@ address: 221B Baker Street
 city: Westminster
 state: London
 zipcode: NW1
-title: Senior Software Engineer
+title: Software Engineering Lead
 profile: Passionate software developer with expertise in software architecture, user
   experience design, rapid prototyping, project management and tools development.
 skills:
-- Python
-- PyVISA / PyVISA-sim
-- CEFPython
-- Django
-- Clojure / ClojureScript
-- React / Reagent / Re-frame
-- SQL
-- HTML
-- CSS
-- JavaScript
-- Java
-- C
-- Git
-- Windows
-- Linux
+  - Python
+  - PyVISA / PyVISA-sim
+  - Go
+  - Docker
+  - Django
+  - Clojure / ClojureScript
+  - React / Redux
+  - Reagent / Re-frame
+  - SQL
+  - HTML
+  - CSS
+  - JavaScript / TypeScript
+  - Git
+  - Windows
+  - Linux
 experience:
-- employer: Silicon Labs
-  title: Senior Software Engineer
-  location: Austin, Texas
-  start_date: January 2020
-  end_date: present
-  tasks:
-  - Administered high availability systems responsible for operations tooling
-  - Lead team responsible test program release management app development
-  - Designed front end applications using React/Redux
-  - Architected and developed Python/Tornado/RabbitMQ-based backend
-  - Developed and maintained unit tests
-  - Mentored interns and new college graduates
-- employer: Renesas Electronics America
-  title: Software Engineering Manager
-  location: Austin, Texas
-  start_date: October 2014
-  end_date: December 2019
-  tasks:
-  - Architected ClojureScript/Reagent/Re-frame (unidirectional dataflow) based GUI
-    application for data collection using CEFPython framework
-  - Directed Clojure/Immutant based backend API responsible for test result data and
-    file and code organization
-  - Designed software APIs using PyVISA for oscilloscopes, programmable power supplies,
-    digital multimeters, signal generators, electronic loads
-  - Contributed to the PyVISA project with improvements to their hardware mock code
-  - Experienced in developing unit tests and hardware mocks for unit testing
-  - Versed in PMBus communication protocol for DUT control
-  - Consulted various product teams in validation test programming methodologies and
-    data collection and storage methods
-  - Involved in validation test creation for power management ICs
-- employer: Freescale Semiconductor
-  title: Electrical Validation Engineer
-  location: Austin, Texas
-  start_date: August 2010
-  end_date: October 2014
-  tasks:
-  - Designed a web based test automation framework written in Python using Django
-    backed by MySQL
-  - Deployed production web services using nginx with FastCGI and Varnish cache accelerator
-  - Involved in electrical validation for the QorIQ family of products
-  - Implemented graphical test automation tool using PyGtk
-- employer: Freescale Semiconductor
-  title: Functional Validation Intern
-  location: Austin, Texas
-  start_date: May 2008
-  end_date: August 2010
-  tasks:
-  - Created graphical framework written in Python to develop abstractions of testbenches
-    or SoCs
-  - Developed memory map configurations for QorIQ SoCs
-  - Provided methods to translate device definition into toolchain code for configuring
-    and executing test cases
-- employer: Freescale Semiconductor
-  title: Failure Analysis Intern
-  location: Austin, Texas
-  start_date: June 2007
-  end_date: December 2007
-  tasks:
-  - Implemented automatic TIFF to JPEG conversion on the failure analysis web pages
-    at Austin Technology and Manufacturing Center (ATMC)
-  - Created team review web page for the failure analysis group at ATMC
-  - Designed new database tables for failure analysis database at ATMC
-  - Coded new web pages for second revision of the failure analysis database
+  - employer: Shippo
+    title: Software Engineer 3
+    location: Austin, Texas
+    start_date: August 2021
+    end_date: present
+    tasks:
+      - Team Lead for the Onboarding and Setup team
+      - Architected and developed Go/HTTP/gRPC-based microservices
+      - Designed front end applications using TypeScript/React/Redux
+      - Developed infrastructure to abstract local Docker development and EKS production environment differences
+      - Mentored junior employees
+  - employer: Silicon Labs
+    title: Senior Software Engineer
+    location: Austin, Texas
+    start_date: January 2020
+    end_date: July 2021
+    tasks:
+      - Administered high availability systems responsible for operations tooling
+      - Lead team responsible test program release management app development
+      - Designed front end applications using React/Redux
+      - Architected and developed Python/Tornado/RabbitMQ-based backend
+      - Developed and maintained unit tests
+      - Mentored interns and new college graduates
+  - employer: Renesas Electronics America
+    title: Software Engineering Manager
+    location: Austin, Texas
+    start_date: October 2014
+    end_date: December 2019
+    tasks:
+      - Architected ClojureScript/Reagent/Re-frame (unidirectional dataflow) based GUI
+        application for data collection using CEFPython framework
+      - Directed Clojure/Immutant based backend API responsible for test result data and
+        file and code organization
+      - Designed software APIs using PyVISA for oscilloscopes, programmable power supplies,
+        digital multimeters, signal generators, electronic loads
+      - Contributed to the PyVISA project with improvements to their hardware mock code
+      - Experienced in developing unit tests and hardware mocks for unit testing
+      - Versed in PMBus communication protocol for DUT control
+      - Consulted various product teams in validation test programming methodologies and
+        data collection and storage methods
+      - Involved in validation test creation for power management ICs
+  - employer: Freescale Semiconductor
+    title: Electrical Validation Engineer
+    location: Austin, Texas
+    start_date: August 2010
+    end_date: October 2014
+    tasks:
+      - Designed a web based test automation framework written in Python using Django
+        backed by MySQL
+      - Deployed production web services using nginx with FastCGI and Varnish cache accelerator
+      - Involved in electrical validation for the QorIQ family of products
+      - Implemented graphical test automation tool using PyGtk
+  - employer: Freescale Semiconductor
+    title: Functional Validation Intern
+    location: Austin, Texas
+    start_date: May 2008
+    end_date: August 2010
+    tasks:
+      - Created graphical framework written in Python to develop abstractions of testbenches
+        or SoCs
+      - Developed memory map configurations for QorIQ SoCs
+      - Provided methods to translate device definition into toolchain code for configuring
+        and executing test cases
 education:
-- institution: The University of Texas
-  location: Austin
-  start_date: 2005
-  end_date: 2010
-  degree: Bachelor of Science, Electrical and Computer Engineering
+  - institution: The University of Texas
+    location: Austin
+    start_date: 2005
+    end_date: 2010
+    degree: Bachelor of Science, Electrical and Computer Engineering
 projects:
-- title: Jinsei
-  description: Authored automated resume generation tool that converts a YAML-defined
-    resume into HTML via Jinja2 then converts the output to PDF via wkhtmltopdf (it
-    built this resume!).
-  link: github.com/famish99/jinsei
-- title: Cuenta
-  description: Authored Clojure + ClojureScript based application to split restaurant
-    bills and tally up debts between friends.
-  link: github.com/famish99/cuenta
-- title: PyVISA
-  description: Contributed to the PyVISA project and mock backend library PyVISA-sim
-  link: github.com/pyvisa/pyvisa
+  - title: Jinsei
+    description: Authored automated resume generation tool that converts a YAML-defined
+      resume into HTML via Jinja2 then converts the output to PDF via wkhtmltopdf (it
+      built this resume!).
+    link: github.com/famish99/jinsei
+  - title: Cuenta
+    description: Authored Clojure + ClojureScript based application to split restaurant
+      bills and tally up debts between friends.
+    link: github.com/famish99/cuenta
+  - title: PyVISA
+    description: Contributed to the PyVISA project and mock backend library PyVISA-sim
+    link: github.com/pyvisa/pyvisa

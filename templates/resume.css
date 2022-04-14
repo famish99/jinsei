@@ -12,14 +12,19 @@
 ---------------------------------------------------------------------------------
 */
 
-
+@font-face {
+    font-family: Georgia;
+    src: local("Georgia");
+}
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
 .msg a:hover { background: #266400; }
-
 /* //-- yui-grids style overrides -- */
-body { font-family: Georgia; color: #444; }
+body {
+    font-family: Georgia, serif;
+    color: #444;
+}
 #inner { padding: 10px 75px; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2.0em; border-bottom: 1px solid #ccc; }
 
@@ -58,7 +63,6 @@ a#pdf:hover { background: #222; }
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; page-break-inside: avoid; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
 .job p { margin: 0.75em 0 3em 0; }
-@media print { .break { page-break-before: always; } }
 
 .last { margin-bottom: 0; padding-bottom: 0; border: none; }
 .skills-list {  }

@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  builder:
+    command: python jinsei.py --template-dir ${TEMPLATE_DIR} --method ${METHOD} "${INPUT_FILE}" "${OUTPUT_FILE}" --overrides ${OVERRIDES}
+    build:
+      context: .
+      dockerfile: config/Dockerfile
+    image: jinsei
+    volumes:
+      - ./:/app:cached
