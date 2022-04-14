@@ -47,7 +47,7 @@ Top level keys for the resume YAML are the following:
  * `city`
  * `state`
  * `zipcode`
- * `title`: Current Job title
+ * `title`: Current job title
  * `profile`: A summary line
  * `skills`: A list of technical skills
  * `experience`: Outlined in [Experience Fields](#experience-fields)
@@ -63,7 +63,7 @@ Each `experience` item expects the following fields:
  * `location`
  * `start_date`
  * `end_date`
- * `tasks`: A list of projects and responsibilites held in the position
+ * `tasks`: A list of projects and responsibilities held in the position
 
 ### Education Fields
 
