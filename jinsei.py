@@ -26,7 +26,7 @@ def parse_context(input_file: str, overrides: list[str]) -> dict[str, Any]:
             # Needed for cases file reports a modified time but changes are cached
             ifp.flush()
             over_dict: dict[str, Any] = yaml.load(ifp, Loader=yaml.Loader)
-            extensions: list[Any]
+            extensions: list[dict[str, str]]
             if extensions := over_dict.pop('skills', None):
                 context['skills'].extend(extensions)
             if extensions := over_dict.pop('experience', None):
@@ -78,7 +78,7 @@ def build_resume(build_args: argparse.Namespace) -> None:
 def auto_build_resume(build_args: argparse.Namespace) -> None:
     print('Watching for changes - %s' % build_args.input, file=sys.stderr)
 
-    def last_updated_time():
+    def last_updated_time() -> float:
         return max(
             os.stat(build_args.input).st_mtime,
             *(os.stat(override).st_mtime for override in build_args.overrides),
@@ -99,7 +99,7 @@ def auto_build_resume(build_args: argparse.Namespace) -> None:
                 try:
                     build_resume(build_args)
                 except Exception:
-                    traceback.print_exc(file=sys.stdout)
+                    traceback.print_exc(file=sys.stderr)
             sleep(5)
     except KeyboardInterrupt:
         return
