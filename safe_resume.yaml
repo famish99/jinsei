@@ -30,11 +30,14 @@ experience:
     title: Software Engineer 3
     location: Austin, Texas
     start_date: August 2021
-    end_date: present
+    end_date: November 2022
     tasks:
-      - Team Lead for the Onboarding and Setup team
+      - Led the Onboarding and Setup team
       - Architected and developed Go/HTTP/gRPC-based microservices
       - Designed front end applications using TypeScript/React/Redux
+      - Overhauled OAuth2 authorization framework and token management
+      - Created SumoLogic monitoring dashboards and alerts for microservice deployments
+      - Maintained system infrastructure and deployments as part of oncall team
       - Developed infrastructure to abstract local Docker development and EKS production environment differences
       - Mentored junior employees
   - employer: Silicon Labs
