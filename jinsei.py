@@ -1,31 +1,32 @@
 #!/usr/bin/python3
 import argparse
-from argparse import ArgumentParser
-from jinja2 import Environment, FileSystemLoader
-from ruamel import yaml
-from shutil import copyfile
-from time import sleep, strftime
-from typing import Any
+import os
 import subprocess
 import sys
 import traceback
-import os
+from argparse import ArgumentParser
+from shutil import copyfile
+from time import sleep, strftime
+from typing import Any
 
+from jinja2 import Environment, FileSystemLoader
+from ruamel.yaml import YAML
 
 NUM_COLS = 3
 
 
 def parse_context(input_file: str, overrides: list[str]) -> dict[str, Any]:
     context: dict[str, Any] = {}
+    yaml = YAML(typ='rt')
     with open(input_file, 'r') as ifp:
         # Needed for cases file reports a modified time but changes are cached
         ifp.flush()
-        context.update(yaml.load(ifp, Loader=yaml.Loader))
+        context.update(yaml.load(ifp))
     for override in overrides:
         with open(override, 'r') as ifp:
             # Needed for cases file reports a modified time but changes are cached
             ifp.flush()
-            over_dict: dict[str, Any] = yaml.load(ifp, Loader=yaml.Loader)
+            over_dict: dict[str, Any] = yaml.load(ifp)
             extensions: list[dict[str, str]]
             if extensions := over_dict.pop('skills', None):
                 context['skills'].extend(extensions)

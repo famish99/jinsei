@@ -8,24 +8,37 @@ state: London
 zipcode: NW1
 title: Software Engineering Lead
 profile: Passionate software developer with expertise in software architecture, user
-  experience design, rapid prototyping, project management and tools development.
+  experience design, rapid prototyping, developer productivity and tools development.
 skills:
   - Python
   - PyVISA / PyVISA-sim
   - Go
+  - Java / Kotlin / Spring Boot
   - Docker
+  - Terraform
   - Django
-  - Clojure / ClojureScript
   - React / Redux
-  - Reagent / Re-frame
   - SQL
-  - HTML
-  - CSS
+  - HTML / CSS
   - JavaScript / TypeScript
   - Git
-  - Windows
+  - CICD / Buildkite
+  - Mac
   - Linux
 experience:
+  - employer: Wayfair
+    title: Software Engineer 3
+    location: Austin, Texas
+    start_date: January 2023
+    end_date: March 2025
+    tasks:
+      - Owned integrations between Warehousing software and Warehouse Automation, Labor Management and Yard Management vendors
+      - Defined standards and created tooling for implementing Datadog monitoring within Terraform
+      - Built multiple event-based (Kafka) Java Spring Boot applications
+      - Designed front end application for carton exception handling using TypeScript/React/GraphQL
+      - Migrated monolithic TSQL databases into Google Cloud Postgres SPDBs
+      - Created tooling to automate hierarchical Avro schema validation
+      - Overhauled runbook system and trained team members for supporting oncall rotation
   - employer: Shippo
     title: Software Engineer 3
     location: Austin, Texas
@@ -81,17 +94,6 @@ experience:
       - Deployed production web services using nginx with FastCGI and Varnish cache accelerator
       - Involved in electrical validation for the QorIQ family of products
       - Implemented graphical test automation tool using PyGtk
-  - employer: Freescale Semiconductor
-    title: Functional Validation Intern
-    location: Austin, Texas
-    start_date: May 2008
-    end_date: August 2010
-    tasks:
-      - Created graphical framework written in Python to develop abstractions of testbenches
-        or SoCs
-      - Developed memory map configurations for QorIQ SoCs
-      - Provided methods to translate device definition into toolchain code for configuring
-        and executing test cases
 education:
   - institution: The University of Texas
     location: Austin
